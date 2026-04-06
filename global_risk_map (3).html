@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fcf51b4ce6caa5fd52aa70471f4398b3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fcf51b4ce6caa5fd52aa70471f4398b3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fcf51b4ce6caa5fd52aa70471f4398b3 = L.map(
+                "map_fcf51b4ce6caa5fd52aa70471f4398b3",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3dbd2b37e0560e9bbf8884a63be60c6d = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3dbd2b37e0560e9bbf8884a63be60c6d.addTo(map_fcf51b4ce6caa5fd52aa70471f4398b3);
+        
+    
+            var circle_marker_b5deb9f5e4252c7ea5c3bceace2cd9e7 = L.circleMarker(
+                [-2.37, 119.47],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50.104, "stroke": true, "weight": 3}
+            ).addTo(map_fcf51b4ce6caa5fd52aa70471f4398b3);
+        
+    
+        var popup_fc4a91f6e93beca8d614cf3102baf6c3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_616b3498794ae2a61c8817ac384d6910 = $(`<div id="html_616b3498794ae2a61c8817ac384d6910" style="width: 100.0%; height: 100.0%;"><b>Indonesia</b><br>Risk Score: 0.6263<br>Events: 7766<br>Depth Type: shallow (0-70 km)<br>Data Quality: 72.2%<br>Reviewed: 100.0%</div>`)[0];
+                popup_fc4a91f6e93beca8d614cf3102baf6c3.setContent(html_616b3498794ae2a61c8817ac384d6910);
+            
+        
+
+        circle_marker_b5deb9f5e4252c7ea5c3bceace2cd9e7.bindPopup(popup_fc4a91f6e93beca8d614cf3102baf6c3)
+        ;
+
+        
+    
+    
+            var circle_marker_3ebfb41a1d654d3a73efab44a2653345 = L.circleMarker(
+                [-5.48, 150.07],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 28.936, "stroke": true, "weight": 3}
+            ).addTo(map_fcf51b4ce6caa5fd52aa70471f4398b3);
+        
+    
+        var popup_4aae09b94753cb71db15e343cb69211b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bdc0173fc165d00c3c4381fd4b7ae4d1 = $(`<div id="html_bdc0173fc165d00c3c4381fd4b7ae4d1" style="width: 100.0%; height: 100.0%;"><b>Papua New Guinea</b><br>Risk Score: 0.3617<br>Events: 4457<br>Depth Type: shallow (0-70 km)<br>Data Quality: 65.1%<br>Reviewed: 100.0%</div>`)[0];
+                popup_4aae09b94753cb71db15e343cb69211b.setContent(html_bdc0173fc165d00c3c4381fd4b7ae4d1);
+            
+        
+
+        circle_marker_3ebfb41a1d654d3a73efab44a2653345.bindPopup(popup_4aae09b94753cb71db15e343cb69211b)
+        ;
+
+        
+    
+    
+            var circle_marker_8f41d98c73173864b96cd92391090268 = L.circleMarker(
+                [34.0, 136.42],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 28.0, "stroke": true, "weight": 3}
+            ).addTo(map_fcf51b4ce6caa5fd52aa70471f4398b3);
+        
+    
+        var popup_cfb18df2244df4c225860c145b659f1a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_48b699b526c93cb986935ee7a765586d = $(`<div id="html_48b699b526c93cb986935ee7a765586d" style="width: 100.0%; height: 100.0%;"><b>Japan</b><br>Risk Score: 0.35<br>Events: 4367<br>Depth Type: shallow (0-70 km)<br>Data Quality: 82.4%<br>Reviewed: 100.0%</div>`)[0];
+                popup_cfb18df2244df4c225860c145b659f1a.setContent(html_48b699b526c93cb986935ee7a765586d);
+            
+        
+
+        circle_marker_8f41d98c73173864b96cd92391090268.bindPopup(popup_cfb18df2244df4c225860c145b659f1a)
+        ;
+
+        
+    
+    
+            var circle_marker_220beb2bd234aeb028aaf37dfb7c1d00 = L.circleMarker(
+                [9.6, 124.95],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 27.704, "stroke": true, "weight": 3}
+            ).addTo(map_fcf51b4ce6caa5fd52aa70471f4398b3);
+        
+    
+        var popup_862b6fb80284ed137af2167040412ab3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3f6294e890350a6dadddab574b019eb4 = $(`<div id="html_3f6294e890350a6dadddab574b019eb4" style="width: 100.0%; height: 100.0%;"><b>Philippines</b><br>Risk Score: 0.3463<br>Events: 4321<br>Depth Type: shallow (0-70 km)<br>Data Quality: 60.6%<br>Reviewed: 100.0%</div>`)[0];
+                popup_862b6fb80284ed137af2167040412ab3.setContent(html_3f6294e890350a6dadddab574b019eb4);
+            
+        
+
+        circle_marker_220beb2bd234aeb028aaf37dfb7c1d00.bindPopup(popup_862b6fb80284ed137af2167040412ab3)
+        ;
+
+        
+    
+    
+            var circle_marker_d702d2a59fefd2292413ae631933d9ec = L.circleMarker(
+                [-18.95, -174.43],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.28, "stroke": true, "weight": 3}
+            ).addTo(map_fcf51b4ce6caa5fd52aa70471f4398b3);
+        
+    
+        var popup_a1696ba0d06a69fe27097489d1a2177b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1bb19b783d60b2d324a76863c5c3b978 = $(`<div id="html_1bb19b783d60b2d324a76863c5c3b978" style="width: 100.0%; height: 100.0%;"><b>Tonga</b><br>Risk Score: 0.2785<br>Events: 3453<br>Depth Type: shallow (0-70 km)<br>Data Quality: 35.6%<br>Reviewed: 100.0%</div>`)[0];
+                popup_a1696ba0d06a69fe27097489d1a2177b.setContent(html_1bb19b783d60b2d324a76863c5c3b978);
+            
+        
+
+        circle_marker_d702d2a59fefd2292413ae631933d9ec.bindPopup(popup_a1696ba0d06a69fe27097489d1a2177b)
+        ;
+
+        
+    
+    
+            var circle_marker_cff3ccdce6c75299e071140d40b66e08 = L.circleMarker(
+                [51.07, 154.8],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.128, "stroke": true, "weight": 3}
+            ).addTo(map_fcf51b4ce6caa5fd52aa70471f4398b3);
+        
+    
+        var popup_e6c8a17c06c8047da60c06f1f3288568 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e2206f5886d1aab5a4f029d9fe377542 = $(`<div id="html_e2206f5886d1aab5a4f029d9fe377542" style="width: 100.0%; height: 100.0%;"><b>Russia</b><br>Risk Score: 0.2766<br>Events: 3422<br>Depth Type: shallow (0-70 km)<br>Data Quality: 60.9%<br>Reviewed: 100.0%</div>`)[0];
+                popup_e6c8a17c06c8047da60c06f1f3288568.setContent(html_e2206f5886d1aab5a4f029d9fe377542);
+            
+        
+
+        circle_marker_cff3ccdce6c75299e071140d40b66e08.bindPopup(popup_e6c8a17c06c8047da60c06f1f3288568)
+        ;
+
+        
+    
+    
+            var circle_marker_85e4c3883105dc18f40c2c214a75ca95 = L.circleMarker(
+                [-28.8, -71.4],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.608, "stroke": true, "weight": 3}
+            ).addTo(map_fcf51b4ce6caa5fd52aa70471f4398b3);
+        
+    
+        var popup_73f2fbb26f6eef3a5d516d408f8cca2e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_92eca9eca09db35aa665be8914f43a8a = $(`<div id="html_92eca9eca09db35aa665be8914f43a8a" style="width: 100.0%; height: 100.0%;"><b>Chile</b><br>Risk Score: 0.1951<br>Events: 2409<br>Depth Type: shallow (0-70 km)<br>Data Quality: 67.9%<br>Reviewed: 100.0%</div>`)[0];
+                popup_73f2fbb26f6eef3a5d516d408f8cca2e.setContent(html_92eca9eca09db35aa665be8914f43a8a);
+            
+        
+
+        circle_marker_85e4c3883105dc18f40c2c214a75ca95.bindPopup(popup_73f2fbb26f6eef3a5d516d408f8cca2e)
+        ;
+
+        
+    
+    
+            var circle_marker_f18354b5407f97c225e76eb9f7cc9171 = L.circleMarker(
+                [-16.44, 167.92],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.936, "stroke": true, "weight": 3}
+            ).addTo(map_fcf51b4ce6caa5fd52aa70471f4398b3);
+        
+    
+        var popup_dedd43ad8bec78b6984ff916e781e9b3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_efd4a718f8fddc083e329d651f73e7ec = $(`<div id="html_efd4a718f8fddc083e329d651f73e7ec" style="width: 100.0%; height: 100.0%;"><b>Vanuatu</b><br>Risk Score: 0.1867<br>Events: 2300<br>Depth Type: shallow (0-70 km)<br>Data Quality: 49.7%<br>Reviewed: 100.0%</div>`)[0];
+                popup_dedd43ad8bec78b6984ff916e781e9b3.setContent(html_efd4a718f8fddc083e329d651f73e7ec);
+            
+        
+
+        circle_marker_f18354b5407f97c225e76eb9f7cc9171.bindPopup(popup_dedd43ad8bec78b6984ff916e781e9b3)
+        ;
+
+        
+    
+    
+            var circle_marker_bfa3a7e058e5c65baa0f664bb87ec2a3 = L.circleMarker(
+                [-34.23, -34.42],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.783999999999999, "stroke": true, "weight": 3}
+            ).addTo(map_fcf51b4ce6caa5fd52aa70471f4398b3);
+        
+    
+        var popup_bafb339d60c022fe986681c7b62e0fe7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7d778498f094be571d82624f3bd4f908 = $(`<div id="html_7d778498f094be571d82624f3bd4f908" style="width: 100.0%; height: 100.0%;"><b>New Zealand</b><br>Risk Score: 0.1473<br>Events: 1819<br>Depth Type: shallow (0-70 km)<br>Data Quality: 39.7%<br>Reviewed: 100.0%</div>`)[0];
+                popup_bafb339d60c022fe986681c7b62e0fe7.setContent(html_7d778498f094be571d82624f3bd4f908);
+            
+        
+
+        circle_marker_bfa3a7e058e5c65baa0f664bb87ec2a3.bindPopup(popup_bafb339d60c022fe986681c7b62e0fe7)
+        ;
+
+        
+    
+    
+            var circle_marker_8fe952e3a4d1ae96e7c6ae838572d86a = L.circleMarker(
+                [28.4, 141.96],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.168, "stroke": true, "weight": 3}
+            ).addTo(map_fcf51b4ce6caa5fd52aa70471f4398b3);
+        
+    
+        var popup_8f9e5ef11bfb11629daa307ed11b2a21 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_55f85e29c9b694ef4f912128305510dd = $(`<div id="html_55f85e29c9b694ef4f912128305510dd" style="width: 100.0%; height: 100.0%;"><b>Japan region</b><br>Risk Score: 0.1396<br>Events: 1749<br>Depth Type: shallow (0-70 km)<br>Data Quality: 62.7%<br>Reviewed: 100.0%</div>`)[0];
+                popup_8f9e5ef11bfb11629daa307ed11b2a21.setContent(html_55f85e29c9b694ef4f912128305510dd);
+            
+        
+
+        circle_marker_8fe952e3a4d1ae96e7c6ae838572d86a.bindPopup(popup_8f9e5ef11bfb11629daa307ed11b2a21)
+        ;
+
+        
+    
+    
+            var circle_marker_cbacbfb3ce6665d7dfef1fda50dac38f = L.circleMarker(
+                [-10.43, 162.27],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.24, "stroke": true, "weight": 3}
+            ).addTo(map_fcf51b4ce6caa5fd52aa70471f4398b3);
+        
+    
+        var popup_753f7bb51686acdd467435af4ae26eca = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_846211ccaf7d2b6273d5a5df613307d2 = $(`<div id="html_846211ccaf7d2b6273d5a5df613307d2" style="width: 100.0%; height: 100.0%;"><b>Solomon Islands</b><br>Risk Score: 0.128<br>Events: 1577<br>Depth Type: shallow (0-70 km)<br>Data Quality: 57.8%<br>Reviewed: 100.0%</div>`)[0];
+                popup_753f7bb51686acdd467435af4ae26eca.setContent(html_846211ccaf7d2b6273d5a5df613307d2);
+            
+        
+
+        circle_marker_cbacbfb3ce6665d7dfef1fda50dac38f.bindPopup(popup_753f7bb51686acdd467435af4ae26eca)
+        ;
+
+        
+    
+    
+            var circle_marker_f55cbe8b3c44febae1de08f2582f3626 = L.circleMarker(
+                [54.58, -133.87],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.056000000000001, "stroke": true, "weight": 3}
+            ).addTo(map_fcf51b4ce6caa5fd52aa70471f4398b3);
+        
+    
+        var popup_137cc934dc0bfc9462437c2b7999e6ac = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_534c2f389f158986b3f4dea411081a8b = $(`<div id="html_534c2f389f158986b3f4dea411081a8b" style="width: 100.0%; height: 100.0%;"><b>Alaska</b><br>Risk Score: 0.1257<br>Events: 1527<br>Depth Type: shallow (0-70 km)<br>Data Quality: 54.3%<br>Reviewed: 99.9%</div>`)[0];
+                popup_137cc934dc0bfc9462437c2b7999e6ac.setContent(html_534c2f389f158986b3f4dea411081a8b);
+            
+        
+
+        circle_marker_f55cbe8b3c44febae1de08f2582f3626.bindPopup(popup_137cc934dc0bfc9462437c2b7999e6ac)
+        ;
+
+        
+    
+    
+            var circle_marker_a52a38f3fd44bdbb35fe4a6d01001c77 = L.circleMarker(
+                [-12.17, -74.73],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.944, "stroke": true, "weight": 3}
+            ).addTo(map_fcf51b4ce6caa5fd52aa70471f4398b3);
+        
+    
+        var popup_e3738d9c0a6fba50101eee42892cc254 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d775c49bfa39cda57a50f950529ff901 = $(`<div id="html_d775c49bfa39cda57a50f950529ff901" style="width: 100.0%; height: 100.0%;"><b>Peru</b><br>Risk Score: 0.0993<br>Events: 1231<br>Depth Type: shallow (0-70 km)<br>Data Quality: 68.6%<br>Reviewed: 100.0%</div>`)[0];
+                popup_e3738d9c0a6fba50101eee42892cc254.setContent(html_d775c49bfa39cda57a50f950529ff901);
+            
+        
+
+        circle_marker_a52a38f3fd44bdbb35fe4a6d01001c77.bindPopup(popup_e3738d9c0a6fba50101eee42892cc254)
+        ;
+
+        
+    
+    
+            var circle_marker_9816d573f25e512226bb1536171d2f7b = L.circleMarker(
+                [17.41, -98.43],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.3919999999999995, "stroke": true, "weight": 3}
+            ).addTo(map_fcf51b4ce6caa5fd52aa70471f4398b3);
+        
+    
+        var popup_aa633383067b4679e6dd72bd09fda294 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_93632a93b2ebeac28b8491fca3dff549 = $(`<div id="html_93632a93b2ebeac28b8491fca3dff549" style="width: 100.0%; height: 100.0%;"><b>Mexico</b><br>Risk Score: 0.0924<br>Events: 1132<br>Depth Type: shallow (0-70 km)<br>Data Quality: 46.6%<br>Reviewed: 100.0%</div>`)[0];
+                popup_aa633383067b4679e6dd72bd09fda294.setContent(html_93632a93b2ebeac28b8491fca3dff549);
+            
+        
+
+        circle_marker_9816d573f25e512226bb1536171d2f7b.bindPopup(popup_aa633383067b4679e6dd72bd09fda294)
+        ;
+
+        
+    
+    
+            var circle_marker_38cae046234e9c85808ded4e60e9c43b = L.circleMarker(
+                [35.35, 93.43],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.896, "stroke": true, "weight": 3}
+            ).addTo(map_fcf51b4ce6caa5fd52aa70471f4398b3);
+        
+    
+        var popup_166767829f0ff656981711d92d5a8916 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_769ccdea4ca19ca629587ca74262f153 = $(`<div id="html_769ccdea4ca19ca629587ca74262f153" style="width: 100.0%; height: 100.0%;"><b>China</b><br>Risk Score: 0.0862<br>Events: 1078<br>Depth Type: shallow (0-70 km)<br>Data Quality: 80.2%<br>Reviewed: 100.0%</div>`)[0];
+                popup_166767829f0ff656981711d92d5a8916.setContent(html_769ccdea4ca19ca629587ca74262f153);
+            
+        
+
+        circle_marker_38cae046234e9c85808ded4e60e9c43b.bindPopup(popup_166767829f0ff656981711d92d5a8916)
+        ;
+
+        
+    
+    
+            var circle_marker_6a5e0df42d45f39c174bad7b150e8819 = L.circleMarker(
+                [-29.8, -67.26],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.44, "stroke": true, "weight": 3}
+            ).addTo(map_fcf51b4ce6caa5fd52aa70471f4398b3);
+        
+    
+        var popup_d2a5ae32e603ab3d616b911a0ee8d52c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e51e81c0b103eeb45ca3520a35668987 = $(`<div id="html_e51e81c0b103eeb45ca3520a35668987" style="width: 100.0%; height: 100.0%;"><b>Argentina</b><br>Risk Score: 0.0805<br>Events: 1009<br>Depth Type: intermediate (70-300 km)<br>Data Quality: 61.7%<br>Reviewed: 100.0%</div>`)[0];
+                popup_d2a5ae32e603ab3d616b911a0ee8d52c.setContent(html_e51e81c0b103eeb45ca3520a35668987);
+            
+        
+
+        circle_marker_6a5e0df42d45f39c174bad7b150e8819.bindPopup(popup_d2a5ae32e603ab3d616b911a0ee8d52c)
+        ;
+
+        
+    
+    
+            var circle_marker_4bcf901ec3649aedeb67700879bceffa = L.circleMarker(
+                [17.7, 146.01],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.928, "stroke": true, "weight": 3}
+            ).addTo(map_fcf51b4ce6caa5fd52aa70471f4398b3);
+        
+    
+        var popup_7303dad74fc945db31702c4451e2af9b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_aecfecf4862d35a3060a4d9ff521c0f2 = $(`<div id="html_aecfecf4862d35a3060a4d9ff521c0f2" style="width: 100.0%; height: 100.0%;"><b>Northern Mariana Islands</b><br>Risk Score: 0.0741<br>Events: 929<br>Depth Type: shallow (0-70 km)<br>Data Quality: 47.5%<br>Reviewed: 100.0%</div>`)[0];
+                popup_7303dad74fc945db31702c4451e2af9b.setContent(html_aecfecf4862d35a3060a4d9ff521c0f2);
+            
+        
+
+        circle_marker_4bcf901ec3649aedeb67700879bceffa.bindPopup(popup_7303dad74fc945db31702c4451e2af9b)
+        ;
+
+        
+    
+    
+            var circle_marker_0818e3254e3104bd669c78dd1341f979 = L.circleMarker(
+                [-17.79, -87.71],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.92, "stroke": true, "weight": 3}
+            ).addTo(map_fcf51b4ce6caa5fd52aa70471f4398b3);
+        
+    
+        var popup_90e46ea85789eb9d41325fff2c1fb98c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_81160dc5a6d74941fd46acb7ff3964ff = $(`<div id="html_81160dc5a6d74941fd46acb7ff3964ff" style="width: 100.0%; height: 100.0%;"><b>Fiji</b><br>Risk Score: 0.074<br>Events: 921<br>Depth Type: deep (300+ km)<br>Data Quality: 21.3%<br>Reviewed: 100.0%</div>`)[0];
+                popup_90e46ea85789eb9d41325fff2c1fb98c.setContent(html_81160dc5a6d74941fd46acb7ff3964ff);
+            
+        
+
+        circle_marker_0818e3254e3104bd669c78dd1341f979.bindPopup(popup_90e46ea85789eb9d41325fff2c1fb98c)
+        ;
+
+        
+    
+    
+            var circle_marker_405fe9577051bf7ffa78a4b0d3d8b12f = L.circleMarker(
+                [36.82, 23.72],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.6240000000000006, "stroke": true, "weight": 3}
+            ).addTo(map_fcf51b4ce6caa5fd52aa70471f4398b3);
+        
+    
+        var popup_f22d1b7787e2cada1aa9255490faf0b8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4f0f73bbe8dbe6131fd26d2b903c958e = $(`<div id="html_4f0f73bbe8dbe6131fd26d2b903c958e" style="width: 100.0%; height: 100.0%;"><b>Greece</b><br>Risk Score: 0.0703<br>Events: 879<br>Depth Type: shallow (0-70 km)<br>Data Quality: 68.9%<br>Reviewed: 100.0%</div>`)[0];
+                popup_f22d1b7787e2cada1aa9255490faf0b8.setContent(html_4f0f73bbe8dbe6131fd26d2b903c958e);
+            
+        
+
+        circle_marker_405fe9577051bf7ffa78a4b0d3d8b12f.bindPopup(popup_f22d1b7787e2cada1aa9255490faf0b8)
+        ;
+
+        
+    
+    
+            var circle_marker_9eb9c83481fed7055a367edeeede1326 = L.circleMarker(
+                [-21.87, 169.36],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.384, "stroke": true, "weight": 3}
+            ).addTo(map_fcf51b4ce6caa5fd52aa70471f4398b3);
+        
+    
+        var popup_5471a70f441a606266bb57088393b9f8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_89cba03bbbb0516e186b99ef6f9ba6ca = $(`<div id="html_89cba03bbbb0516e186b99ef6f9ba6ca" style="width: 100.0%; height: 100.0%;"><b>New Caledonia</b><br>Risk Score: 0.0673<br>Events: 826<br>Depth Type: shallow (0-70 km)<br>Data Quality: 53.4%<br>Reviewed: 100.0%</div>`)[0];
+                popup_5471a70f441a606266bb57088393b9f8.setContent(html_89cba03bbbb0516e186b99ef6f9ba6ca);
+            
+        
+
+        circle_marker_9eb9c83481fed7055a367edeeede1326.bindPopup(popup_5471a70f441a606266bb57088393b9f8)
+        ;
+
+        
+    
+</script>
+</html>
